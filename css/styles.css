@@ -1,0 +1,72 @@
+
+body {
+    background-color: white;
+}
+
+#icon {
+    float: left;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.header-container {
+    padding: 10px;
+    align-items: center;
+}
+
+.navigation-bar {
+    text-align: center;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 15em;
+
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.1s;
+}
+
+.nav-button:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: lightskyblue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: whitesmoke;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-fieldset {
+    margin-top: 20px;
+    border-radius: 8px;
+}
