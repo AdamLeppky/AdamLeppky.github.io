@@ -48,21 +48,31 @@ h3 {
     padding-right: 200px;
     background-color: #3893c4;
     color: #fff;
+    transition: 500ms;
 }
 
 .experience-container {
     background-color: #474e5d;
     color: #fff;
+    transition: 500ms;
 }
 
 .education-container {
     background-color: #fff;
     color: #555555;
+    transition: 500ms;
 }
 
 .projects-container {
     background-color: #3893c4;
     color: #fff;
+    transition: 500ms;
+}
+
+.feedback-container {
+    background-color: #c16c17;
+    color: #fff;
+    transition: 500ms;
 }
 
 .footer-container {
@@ -70,4 +80,17 @@ h3 {
     padding-bottom: 20px;
     background-color: #2f2f2f;
     color: #fff;
+    transition: 500ms;
+}
+
+.color-scheme-button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+.color-scheme-img {
+    width: 100px;
+    height: 25px;
 }
