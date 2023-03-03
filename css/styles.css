@@ -69,6 +69,12 @@ h3 {
     transition: 500ms;
 }
 
+.feedback-container {
+    background-color: #c16c17;
+    color: #fff;
+    transition: 500ms;
+}
+
 .footer-container {
     padding-top: 20px;
     padding-bottom: 20px;
