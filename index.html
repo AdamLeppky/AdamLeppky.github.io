@@ -13,6 +13,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="scripts/color-changer.js"></script>
+        <script src="scripts/feedback-form.js"></script>
     </head>
 
     <body>
@@ -29,6 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#feedback">FEEDBACK</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,6 +39,17 @@
 
         <!-- About -->
         <div id="about" class="container-fluid about-container text-center">
+            <div>
+                <button class="color-scheme-button" onclick="onColorSchemeDefault()">
+                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme Default" />
+                </button>
+                <button class="color-scheme-button" onclick="onColorSchemeOne()">
+                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme 1" />
+                </button>
+                <button class="color-scheme-button" onclick="onColorSchemeTwo()">
+                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme 2" />
+                </button>
+            </div>
             <h3 class="margin">About</h3>
             <p class="about-description">I was born and raised in Lincoln, Nebraska where I’ve lived my whole life. I became interested in computer programming in middle school where I learned how to edit HTML web pages to do fun things.</p>
             <p class="about-description">In high school, I took beginning and advanced programming classes focusing on Python and HTML/CSS which got me interested in creating computer programs from the ground up. I also took engineering, architecture, and robotics classes which got me interested in engineering as a whole. All these things ultimately led to my career as a Software Engineer.</p>
@@ -88,6 +102,41 @@
             <h3 class="margin">Projects</h3><br>
             <div class="row justify-content-center">
                 <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div id="feedback" class="container-fluid feedback-container text-center">    
+            <h3 class="margin">Feedback</h3><br>
+            <div class="row justify-content-center">
+                <form id="feedbackForm" onsubmit="onFeedbackSubmit()">
+                    <fieldset>
+                        <legend class="LegendBackground">Vital statistics</legend> 
+                        <table>
+                            <tr>
+                                <td><label for="message">Message:</label></td>
+                                <td><textarea id="message" name="message" rows="5" cols="80"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="rating">Rating:</label></td>
+                                <td>
+                                    <input type="radio" id="rating-5" name="rating" value="5" checked="checked" /><label for="rating-5">5</label>
+                                    <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input id="email" type="text" name="email" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Submit"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
             </div>
         </div>
 
