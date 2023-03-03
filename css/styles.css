@@ -33,7 +33,7 @@ h3 {
 }
 
 .navbar-nav li a:hover {
-    color: #1abc9c !important;
+    color: #ffffff !important;
 }
 
 .navbar-container {
@@ -43,29 +43,31 @@ h3 {
 }
 
 .about-container {
-    margin-top: 45px;
+    padding-top: 120px;
     padding-left: 200px;
     padding-right: 200px;
     background-color: #3893c4;
-    color: #ffffff;
+    color: #fff;
 }
 
 .experience-container {
     background-color: #474e5d;
-    color: #ffffff;
+    color: #fff;
 }
 
 .education-container {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #555555;
 }
 
 .projects-container {
     background-color: #3893c4;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer-container {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #2f2f2f;
+    color: #fff;
 }
