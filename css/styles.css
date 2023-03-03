@@ -1,0 +1,71 @@
+
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {
+    font-size: 16px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.about-container {
+    margin-top: 45px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #3893c4;
+    color: #ffffff;
+}
+
+.experience-container {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+
+.education-container {
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.projects-container {
+    background-color: #3893c4;
+    color: #ffffff;
+}
+
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
