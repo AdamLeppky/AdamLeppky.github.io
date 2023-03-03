@@ -1,43 +1,99 @@
-<!--#include virtual="common/document-header.html"-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Adam Leppky</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+
     <body>
-        <div class="header-container">
-            <img id="icon" src="images/icon.jpg" width="120" height="120" />
-            <h1>Adam Leppky</h1>
-            <h3>Software Engineer</h3>
-            <p>Welcome to my personal portfolio website! Here you will find more information about myself, my experience, the various projects I have worked on, and find a way to contact me.</p>
-            <!--#include virtual="common/navigation-bar.html"-->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="#">Adam Leppky - Software Engineer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About -->
+        <div id="about" class="container-fluid about-container text-center">
+            <h3 class="margin">About</h3>
+            <p class="about-description">I was born and raised in Lincoln, Nebraska where I’ve lived my whole life. I became interested in computer programming in middle school where I learned how to edit HTML web pages to do fun things.</p>
+            <p class="about-description">In high school, I took beginning and advanced programming classes focusing on Python and HTML/CSS which got me interested in creating computer programs from the ground up. I also took engineering, architecture, and robotics classes which got me interested in engineering as a whole. All these things ultimately led to my career as a Software Engineer.</p>
         </div>
-        <div class="project-container">
-            <div class="project-row">
-                <div class="project">
-                    <h3>Graduated from University of Nebraska-Lincoln in 2023</h3>
-                    <p>Graduated with a degree in Software Engineering and a minor in mathematics.</p>
+
+        <!-- Experience -->
+        <div id="experience" class="container-fluid experience-container text-center">    
+            <h3 class="margin">Experience</h3><br>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 item">
+                    <h3>PenLink</h3>
+                    <h5>Soon...</h5>
+                    <h4>Software Engineer</h4>
+                    <p>I will soon be accepting full-time position at PenLink as a Software Engineer in Lincoln, Nebraska.</p>
                 </div>
-                <div class="project">
-                    <h3>Graduated from Lincoln Southwest High School in 2019</h3>
-                    <p>Graduated with honors and with a passion in computers.</p>
+                <div class="col-sm-4"> 
+                    <h3>PenLink</h3>
+                    <h5>2021-2023</h5>
+                    <h4>Intern</h4>
+                    <p>For two years, I worked as a Software Development Intern at PenLink. I worked on many different projects including internal tools, simulators, and even PenLink's flagship product PLX. Some of my skills include creating Windows applications from the ground up using C# and managing build pipelines for full-scale projects.</p>
                 </div>
-            </div>
-            <div class="project-row">
-                <div class="project">
-                    <h3>Worked at Scheels</h3>
-                    <p>Worked as a Cashier for a few years before moving up to Customer Service. I then later moved up to be a Visa credit card expert to help people apply for the store card.</p>
-                </div>
-                <div class="project">
-                    <h3>Interned at PenLink</h3>
-                    <p>Worked as a Software Engineer for almost two years and still going.</p>
-                </div>
-            </div>
-            <div class="project-row">
-                <div class="project">
-                    <h3>Created Retail Schedule Scraper Mobile App</h3>
-                    <p>This mobile iOS application would scrape the schedule information of all the cashiers at my store and display it in a nice format in a clean mobile app. Other fun stuff could also be done using this data.</p>
-                </div>
-                <div class="project">
-                    <h3>Created Weather Data Visualizer</h3>
-                    <p>This program was used in a Meteorology class project for displaying weather data in various graphs using Python.</p>
+                <div class="col-sm-4"> 
+                    <h3>Scheels</h3>
+                    <h5>2017-2021</h5>
+                    <h4>Cashier | Customer Service | Visa Representative</h4>
+                    <p>I started at Lincoln Scheels in High School as a cashier where I learned to interact with many customers on a daily basis. After I outgrew that position with experience I moved up to customer service which came with a whole new set of responsibilities. Soon after that I specialized in working in the Visa credit card booth helping customers apply for the store credit card where I remained for the rest of my time at Scheels.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Education -->
+        <div id="education" class="container-fluid education-container text-center">
+            <h3 class="margin">Education</h3>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 item">
+                    <h3>University of Nebraska-Lincoln</h3>
+                    <h5>2019-2023</h5>
+                    <h4>Bachelor's in Software Engineering</h4>
+                </div>
+                <div class="col-sm-4"> 
+                    <h3>Lincoln Southwest High School</h3>
+                    <h5>2015-2019</h5>
+                    <h4>High School Diploma</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="container-fluid projects-container text-center">    
+            <h3 class="margin">Projects</h3><br>
+            <div class="row justify-content-center">
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container-fluid footer-container text-center">
+            <p>adamleppky@gmail.com</p>
+        </footer>
     </body>
 </html>

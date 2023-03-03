@@ -1,72 +1,73 @@
 
 body {
-    background-color: white;
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
 }
 
-#icon {
-    float: left;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 5px;
+p {
+    font-size: 16px;
 }
 
-.header-container {
-    padding: 10px;
-    align-items: center;
-}
-
-.navigation-bar {
-    text-align: center;
-}
-
-.nav-button {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    width: 15em;
-
-    color: black;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
+h3 {
     font-weight: bold;
-
-    transition: 0.1s;
 }
 
-.nav-button:hover {
-    background-color: lightskyblue;
-    color: white;
+.margin {
+    margin-bottom: 45px;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    background-color: lightskyblue;
-    border: 2px solid black;
-    border-radius: 5px;
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.project-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
 }
 
-.project {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    background-color: whitesmoke;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+.navbar-nav li a:hover {
+    color: #ffffff !important;
 }
 
-.contact-fieldset {
-    margin-top: 20px;
-    border-radius: 8px;
+.navbar-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.about-container {
+    padding-top: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #3893c4;
+    color: #fff;
+}
+
+.experience-container {
+    background-color: #474e5d;
+    color: #fff;
+}
+
+.education-container {
+    background-color: #fff;
+    color: #555555;
+}
+
+.projects-container {
+    background-color: #3893c4;
+    color: #fff;
+}
+
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2f2f2f;
+    color: #fff;
 }
