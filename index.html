@@ -10,6 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/colors.css" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
 
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="#">Adam Leppky - Software Engineer</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +33,18 @@
                         <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#feedback">FEEDBACK</a></li>
+                        <li>
+                            <div class="color-scheme-dropdown btn-group dropstart">
+                                <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Color Scheme
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                  <li><button class="dropdown-item" onclick="onDarkMode()">Dark Mode</button></li>
+                                  <li><button class="dropdown-item" onclick="onLightMode()">Light Mode</button></li>
+                                  <li><button class="dropdown-item" onclick="onGradientMode()">Gradient Mode</button></li>
+                                </ul>
+                              </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -39,17 +52,6 @@
 
         <!-- About -->
         <div id="about" class="container-fluid about-container text-center">
-            <div>
-                <button class="color-scheme-button" onclick="onColorSchemeDefault()">
-                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme Default" />
-                </button>
-                <button class="color-scheme-button" onclick="onColorSchemeOne()">
-                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme 1" />
-                </button>
-                <button class="color-scheme-button" onclick="onColorSchemeTwo()">
-                    <img class="color-scheme-img" src="images/color-scheme-button-1.svg" alt="Color Scheme 2" />
-                </button>
-            </div>
             <h3 class="margin">About</h3>
             <p class="about-description">I was born and raised in Lincoln, Nebraska where I’ve lived my whole life. I became interested in computer programming in middle school where I learned how to edit HTML web pages to do fun things.</p>
             <p class="about-description">In high school, I took beginning and advanced programming classes focusing on Python and HTML/CSS which got me interested in creating computer programs from the ground up. I also took engineering, architecture, and robotics classes which got me interested in engineering as a whole. All these things ultimately led to my career as a Software Engineer.</p>
@@ -111,7 +113,6 @@
             <div class="row justify-content-center">
                 <form id="feedbackForm" onsubmit="onFeedbackSubmit()">
                     <fieldset>
-                        <legend class="LegendBackground">Vital statistics</legend> 
                         <table>
                             <tr>
                                 <td><label for="message">Message:</label></td>

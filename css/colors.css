@@ -1,0 +1,90 @@
+
+:root,
+:root.light {
+    --color-navbar-bg: linear-gradient(to top, #fefefe, #fefefe);
+    --color-navbar-fg: #303234;
+    --color-navbar-a-fg: #303234;
+    --color-navbar-a-hover-fg: #c7cbce;
+    --color-about-bg: linear-gradient(to bottom right, #b0bcec, #ffffff);
+    --color-about-fg: #303234;
+    --color-experience-bg: linear-gradient(to bottom right, #badeea, #ffffff);
+    --color-experience-fg: #303234;
+    --color-education-bg: linear-gradient(to bottom right, #edd2ef, #ffffff);
+    --color-education-fg: #303234;
+    --color-projects-bg: linear-gradient(to bottom right, #efd2da, #ffffff);
+    --color-projects-fg: #303234;
+    --color-feedback-bg: linear-gradient(to bottom right, #efded2, #ffffff);
+    --color-feedback-fg: #303234;
+    --color-footer-bg: linear-gradient(to bottom right, #eeefd2, #ffffff);
+    --color-footer-fg: #303234;
+}
+:root.dark {
+    --color-navbar-bg: #24242c;
+    --color-navbar-fg: #ffffff;
+    --color-navbar-a-fg: #dfdfdf;
+    --color-about-bg: #FFFBEB;
+    --color-about-fg: #000000;
+}
+:root.gradient {
+    --color-navbar-bg: #242d4a;
+    --color-navbar-fg: #c4c2d0;
+    --color-navbar-a-fg: #9a9a9a;
+    --color-navbar-a-hover-fg: #ffffff;
+    --color-about-bg: linear-gradient(to bottom right, #321054, #04719d);
+    --color-about-fg: #ffffff;
+}
+
+.navbar-brand {
+    color: var(--color-navbar-fg);
+}
+
+.navbar {
+    background-image: var(--color-navbar-bg);
+    background-color: var(--color-navbar-bg);
+    color: var(--color-navbar-fg);
+}
+
+.navbar-nav li a:hover {
+    color: var(--color-navbar-a-hover-fg) !important;
+}
+
+.nav-link {
+    color: var(--color-navbar-a-fg);
+}
+
+.about-container {
+    background-image: var(--color-about-bg);
+    background-color: var(--color-about-bg);
+    color: var(--color-about-fg);
+    border-bottom: 1px solid #adb3ba;
+}
+
+.experience-container {
+    background-image: var(--color-experience-bg);
+    background-color: var(--color-experience-bg);
+    color: var(--color-experience-fg);
+}
+
+.education-container {
+    background-image: var(--color-education-bg);
+    background-color: var(--color-education-bg);
+    color: var(--color-education-fg);
+}
+
+.projects-container {
+    background-image: var(--color-projects-bg);
+    background-color: var(--color-projects-bg);
+    color: var(--color-projects-fg);
+}
+
+.feedback-container {
+    background-image: var(--color-feedback-bg);
+    background-color: var(--color-feedback-bg);
+    color: var(--color-feedback-fg);
+}
+
+.footer-container {
+    background-image: var(--color-footer-bg);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-fg);
+}

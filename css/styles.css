@@ -1,8 +1,11 @@
 
+:root {
+    --transition-time: 1000ms;
+}
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
 }
 
 p {
@@ -32,65 +35,41 @@ h3 {
     letter-spacing: 5px;
 }
 
-.navbar-nav li a:hover {
-    color: #ffffff !important;
-}
-
 .navbar-container {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
 }
 
+.color-scheme-dropdown {
+    font-size: 30em;
+}
+
 .about-container {
     padding-top: 120px;
     padding-left: 200px;
     padding-right: 200px;
-    background-color: #3893c4;
-    color: #fff;
-    transition: 500ms;
+    transition: var(--transition-time);
 }
 
 .experience-container {
-    background-color: #474e5d;
-    color: #fff;
-    transition: 500ms;
+    transition: var(--transition-time);
 }
 
 .education-container {
-    background-color: #fff;
-    color: #555555;
-    transition: 500ms;
+    transition: var(--transition-time);
 }
 
 .projects-container {
-    background-color: #3893c4;
-    color: #fff;
-    transition: 500ms;
+    transition: var(--transition-time);
 }
 
 .feedback-container {
-    background-color: #c16c17;
-    color: #fff;
-    transition: 500ms;
+    transition: var(--transition-time);
 }
 
 .footer-container {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #2f2f2f;
-    color: #fff;
-    transition: 500ms;
-}
-
-.color-scheme-button {
-    border: none;
-    cursor: pointer;
-    appearance: none;
-    background-color: inherit;
-}
-
-.color-scheme-img {
-    width: 100px;
-    height: 25px;
+    transition: var(--transition-time);
 }

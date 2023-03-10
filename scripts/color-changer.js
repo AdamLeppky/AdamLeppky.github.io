@@ -1,45 +1,46 @@
 
-class ClassScheme {
-    constructor(className, colorSchemes) {
-        this.className = className;
-        this.colorSchemes = colorSchemes;
+var COLOR_SCHEMES = ["light", "dark", "gradient"];
+
+function onDarkMode() {
+    setColorScheme("dark");
+}
+
+function onLightMode() {
+    setColorScheme("light");
+}
+
+function onGradientMode() {
+    setColorScheme("gradient");
+}
+
+function clearColorSchemes() {
+    for (const color in COLOR_SCHEMES)
+        document.documentElement.classList.remove(color);
+}
+
+function setColorScheme(scheme) {
+    console.log("Setting Scheme: " + scheme);
+    for (const color in COLOR_SCHEMES)
+        document.documentElement.classList.remove(COLOR_SCHEMES[color]);
+
+    document.documentElement.classList.add(scheme);
+    window.localStorage.setItem('mode', scheme);
+}
+
+function onLoad() {
+    const mode = window.localStorage.getItem('mode');
+    console.log("Loaded Scheme: " + mode);
+
+    switch (mode) {
+        case 'dark': 
+            onDarkMode(); break;
+        case 'light': 
+            onLightMode(); break;
+        case 'gradient': 
+            onGradientMode(); break;
+        default:
+            onDarkMode();
     }
 }
 
-class ColorScheme {
-    constructor(backgroundColor, foregroundColor) {
-        this.backgroundColor = backgroundColor;
-        this.foregroundColor = foregroundColor;
-    }
-}
-
-const aboutClass = new ClassScheme('about-container', [
-    new ColorScheme('#3893c4', '#fff'),
-    new ColorScheme('white', 'black'),
-    new ColorScheme('black', 'white'),
-])
-
-
-function onColorSchemeDefault() {
-    changeClassColors(aboutClass, 0);
-}
-
-
-function onColorSchemeOne() {
-    changeClassColors(aboutClass, 1);
-}
-
-
-function onColorSchemeTwo() {
-    changeClassColors(aboutClass, 2);
-}
-
-
-function changeClassColors(classScheme, colorSchemeIndex) {
-    var colorScheme = classScheme.colorSchemes[colorSchemeIndex];
-    var container = document.getElementsByClassName(classScheme.className);
-    for (i = 0; i < container.length; i++) {
-        container[i].style.backgroundColor = colorScheme.backgroundColor;
-        container[i].style.color = colorScheme.foregroundColor;
-    }
-}
+onLoad();
