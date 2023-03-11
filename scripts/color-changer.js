@@ -1,5 +1,5 @@
 
-var COLOR_SCHEMES = ["light", "dark", "gradient"];
+var COLOR_SCHEMES = ["light", "dark"];
 
 function onDarkMode() {
     setColorScheme("dark");
@@ -7,10 +7,6 @@ function onDarkMode() {
 
 function onLightMode() {
     setColorScheme("light");
-}
-
-function onGradientMode() {
-    setColorScheme("gradient");
 }
 
 function clearColorSchemes() {
@@ -36,8 +32,6 @@ function onLoad() {
             onDarkMode(); break;
         case 'light': 
             onLightMode(); break;
-        case 'gradient': 
-            onGradientMode(); break;
         default:
             onDarkMode();
     }
