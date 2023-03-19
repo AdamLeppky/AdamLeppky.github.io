@@ -22,7 +22,7 @@
 
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar-id">
+        <nav class="navbar navbar-dark navbar-expand-xl fixed-top" id="navbar-id">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="#">Adam Leppky - Software Engineer</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,8 +54,13 @@
         <!-- About -->
         <div id="about" class="container-fluid about-container text-center">
             <h3 class="margin">About</h3>
-            <p class="about-description">I was born and raised in Lincoln, Nebraska where I’ve lived my whole life. I became interested in computer programming in middle school where I learned how to edit HTML web pages to do fun things.</p>
-            <p class="about-description">In high school, I took beginning and advanced programming classes focusing on Python and HTML/CSS which got me interested in creating computer programs from the ground up. I also took engineering, architecture, and robotics classes which got me interested in engineering as a whole. All these things ultimately led to my career as a Software Engineer.</p>
+            <div class="about-content">
+                <img class="images" src="assets/lincoln1.jpg" />
+                <div class="about-text-content">
+                    <p class="about-description">I was born and raised in Lincoln, Nebraska where I’ve lived my whole life. I became interested in computer programming in middle school where I learned how to edit HTML web pages to do fun things.</p>
+                    <p class="about-description">In high school, I took beginning and advanced programming classes focusing on Python and HTML/CSS which got me interested in creating computer programs from the ground up. I also took engineering, architecture, and robotics classes which got me interested in engineering as a whole. All these things ultimately led to my career as a Software Engineer.</p>
+                </div>
+            </div>
         </div>
 
         <!-- Experience -->
@@ -94,11 +99,13 @@
             <h3 class="margin">Education</h3>
             <div class="row justify-content-center">
                 <div class="col-sm-4 item">
+                    <img class="education-image" src="assets/unl1.jpg" />
                     <h3>University of Nebraska-Lincoln</h3>
                     <h5>2019-2023</h5>
                     <h4>Bachelor's in Software Engineering</h4>
                 </div>
                 <div class="col-sm-4"> 
+                    <img class="education-image" src="assets/southwest1.jpg" />
                     <h3>Lincoln Southwest High School</h3>
                     <h5>2015-2019</h5>
                     <h4>High School Diploma</h4>
@@ -117,35 +124,33 @@
         <!-- Feedback -->
         <div id="feedback" class="container-fluid feedback-container text-center">    
             <h3 class="margin">Feedback</h3><br>
-            <div class="row justify-content-center">
-                <form id="feedbackForm" onsubmit="onFeedbackSubmit()">
-                    <fieldset>
-                        <table>
-                            <tr>
-                                <td><label for="message">Message:</label></td>
-                                <td><textarea id="message" name="message" rows="5" cols="80"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><label for="rating">Rating:</label></td>
-                                <td>
-                                    <input type="radio" id="rating-5" name="rating" value="5" checked="checked" /><label for="rating-5">5</label>
-                                    <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
-                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label for="email">Email:</label></td>
-                                <td><input id="email" type="text" name="email" size="40"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="submit" value="Submit"></td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </form>
-            </div>
+            <form class="feedback-form" id="feedbackForm" onsubmit="onFeedbackSubmit()">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td><textarea id="message" name="message" rows="5" cols="80"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="rating">Rating:</label></td>
+                            <td>
+                                <input type="radio" id="rating-5" name="rating" value="5" checked="checked" /><label for="rating-5">5</label>
+                                <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
+                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input id="email" type="text" name="email" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
         </div>
 
         <!-- Footer -->

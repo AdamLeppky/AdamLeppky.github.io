@@ -3,13 +3,30 @@
     --transition-time: 1000ms;
 }
 
+#about, #experience, #education, #projects, #feedback {
+    scroll-margin-top: 95px;
+}
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.images {
+    height: 3%;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.education-image {
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -50,30 +67,41 @@ h3 {
     padding-left: 200px;
     padding-right: 200px;
     transition: var(--transition-time);
-    height: 40em;
+    height: 45em;
 }
 
-#about, #experience, #education, #projects, #feedback {
-    scroll-margin-top: 95px;
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-description {
+    margin-left: 20px;
+    text-align: left;
 }
 
 .experience-container {
     transition: var(--transition-time);
-    height: 40em;
+    height: 45em;
 }
 
 .education-container {
     transition: var(--transition-time);
-    height: 40em;
+    height: 45em;
 }
 
 .projects-container {
     transition: var(--transition-time);
-    height: 40em;
+    height: 45em;
 }
 
 .feedback-container {
     transition: var(--transition-time);
+}
+
+.feedback-form {
+    margin: 0 auto;
+    width: 1100px;
 }
 
 .footer-container {
