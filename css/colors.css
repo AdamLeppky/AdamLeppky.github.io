@@ -18,16 +18,18 @@
     --color-feedback-fg: #303234;
     --color-footer-bg: linear-gradient(to bottom right, #eeefd2, #ffffff);
     --color-footer-fg: #303234;
-    --color-button-bg: linear-gradient(to bottom right, #d3d3d3, #ffffff);
+    --color-button-bg: linear-gradient(to bottom right, #ffffff, #ffffff);
     --color-button-fg: #303234;
-    --color-dropdown-bg: linear-gradient(to bottom right, #e3e3e3, #ffffff);
+    --color-button-hover-fg: #bcbcbc;
+    --color-dropdown-bg: linear-gradient(to bottom right, #f4f4f4, #ffffff);
     --color-dropdown-fg: #303234;
     --color-dropdown-hover-bg: linear-gradient(to bottom right, #83a1b8, #bfd5df);;
     --color-dropdown-hover-fg: #303234;
+    --color-experience-logo-bg: rgb(255, 255, 255);
 }
 :root.dark {
     --border-containers: 1px solid #00000036;
-    --color-navbar-bg: #242d4a;
+    --color-navbar-bg: #181b24;
     --color-navbar-fg: #c4c2d0;
     --color-navbar-a-fg: #9a9a9a;
     --color-navbar-a-hover-fg: #ffffff;
@@ -43,12 +45,14 @@
     --color-feedback-fg: #ffffff;
     --color-footer-bg: #242d4a;
     --color-footer-fg: #c4c2d0;
-    --color-button-bg: linear-gradient(to bottom right, #2d2d2d, #575757);
+    --color-button-bg: linear-gradient(to bottom right, #181b24, #181b24);
     --color-button-fg: #c4c2d0;
+    --color-button-hover-fg: #f8f8f8;
     --color-dropdown-bg: linear-gradient(to bottom right, #494949, #5d5d5d);
     --color-dropdown-fg: #c4c2d0;
-    --color-dropdown-hover-bg: linear-gradient(to bottom right, #2a343b, #50656f);;
+    --color-dropdown-hover-bg: linear-gradient(to bottom right, #8b8b8b, #595959);;
     --color-dropdown-hover-fg: #c4c2d0;
+    --color-experience-logo-bg: rgb(255, 255, 255);
 }
 
 .navbar-brand {
@@ -117,6 +121,10 @@
     color: var(--color-button-fg);
 }
 
+.btn:hover {
+    color: var(--color-button-hover-fg);
+}
+
 .dropdown-menu {
     background-image: var(--color-dropdown-bg);
     background-color: var(--color-dropdown-bg);
@@ -130,4 +138,8 @@
     background-image: var(--color-dropdown-hover-bg);
     background-color: var(--color-dropdown-hover-bg);
     color: var(--color-dropdown-hover-fg);
+}
+
+.experience-logo {
+    background-color: var(--color-experience-logo-bg);
 }

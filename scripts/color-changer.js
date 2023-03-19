@@ -3,10 +3,18 @@ var COLOR_SCHEMES = ["light", "dark"];
 
 function onDarkMode() {
     setColorScheme("dark");
+
+    var navbar = document.getElementById("navbar-id");
+    navbar.classList.remove("navbar-light");
+    navbar.classList.add("navbar-dark");
 }
 
 function onLightMode() {
     setColorScheme("light");
+
+    var navbar = document.getElementById("navbar-id");
+    navbar.classList.remove("navbar-dark");
+    navbar.classList.add("navbar-light");
 }
 
 function clearColorSchemes() {
@@ -37,4 +45,12 @@ function onLoad() {
     }
 }
 
-onLoad();
+function callWhenLoaded(func) {
+    if (window.addEventListener) {
+      window.addEventListener("load", func, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onload", func);
+    }
+  }
+
+callWhenLoaded(function() { onLoad(); });

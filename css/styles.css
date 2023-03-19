@@ -73,3 +73,15 @@ h3 {
     padding-bottom: 20px;
     transition: var(--transition-time);
 }
+
+.experience-logo {
+    padding: 1em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 15em;
+}
+
+.experience-title {
+    font-weight: bold;
+}
