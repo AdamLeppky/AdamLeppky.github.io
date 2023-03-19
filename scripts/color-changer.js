@@ -3,18 +3,10 @@ var COLOR_SCHEMES = ["light", "dark"];
 
 function onDarkMode() {
     setColorScheme("dark");
-
-    var navbar = document.getElementById("navbar-id");
-    navbar.classList.remove("navbar-light");
-    navbar.classList.add("navbar-dark");
 }
 
 function onLightMode() {
     setColorScheme("light");
-
-    var navbar = document.getElementById("navbar-id");
-    navbar.classList.remove("navbar-dark");
-    navbar.classList.add("navbar-light");
 }
 
 function clearColorSchemes() {

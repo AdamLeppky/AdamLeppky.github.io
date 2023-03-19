@@ -2,11 +2,11 @@
 :root,
 :root.light {
     --border-containers: 1px solid #c4c2d0;
-    --color-navbar-bg: linear-gradient(to top, #fefefe, #fefefe);
-    --color-navbar-fg: #303234;
-    --color-navbar-a-fg: #303234;
+    --color-navbar-bg: #1e1e1e;
+    --color-navbar-fg: #ffffff;
+    --color-navbar-a-fg: #ffffff;
     --color-navbar-a-hover-fg: #c7cbce;
-    --color-about-bg: linear-gradient(to bottom right, #b0bcec, #ffffff);
+    --color-about-bg: linear-gradient(to bottom right, #e4dec6, #ffffff);
     --color-about-fg: #303234;
     --color-experience-bg: linear-gradient(to bottom right, #badeea, #ffffff);
     --color-experience-fg: #303234;
@@ -29,7 +29,7 @@
 }
 :root.dark {
     --border-containers: 1px solid #00000036;
-    --color-navbar-bg: #181b24;
+    --color-navbar-bg: #1e1e1e;
     --color-navbar-fg: #c4c2d0;
     --color-navbar-a-fg: #9a9a9a;
     --color-navbar-a-hover-fg: #ffffff;
@@ -62,6 +62,10 @@
 .navbar {
     background-image: var(--color-navbar-bg);
     background-color: var(--color-navbar-bg);
+    color: var(--color-navbar-fg);
+}
+
+.navbar-light {
     color: var(--color-navbar-fg);
 }
 

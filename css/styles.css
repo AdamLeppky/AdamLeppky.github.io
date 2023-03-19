@@ -46,22 +46,30 @@ h3 {
 }
 
 .about-container {
-    padding-top: 120px;
+    padding-top: 160px;
     padding-left: 200px;
     padding-right: 200px;
     transition: var(--transition-time);
+    height: 40em;
+}
+
+#about, #experience, #education, #projects, #feedback {
+    scroll-margin-top: 95px;
 }
 
 .experience-container {
     transition: var(--transition-time);
+    height: 40em;
 }
 
 .education-container {
     transition: var(--transition-time);
+    height: 40em;
 }
 
 .projects-container {
     transition: var(--transition-time);
+    height: 40em;
 }
 
 .feedback-container {
