@@ -3,34 +3,27 @@
     --transition-time: 1000ms;
 }
 
-#about, #experience, #education, #projects, #feedback {
-    scroll-margin-top: 95px;
-}
-
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
 }
 
+h3 {
+    font-weight: bold;
+}
+
 p {
-    font-size: 20px;
+    font-size: 14px;
+}
+
+#home, #about, #experience, #education, #projects, #feedback {
+    scroll-margin-top: 95px;
 }
 
 .images {
     height: 3%;
     border-radius: 8px;
     border: 1px solid black;
-}
-
-.education-image {
-    height: 250px;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-weight: bold;
 }
 
 .margin {
@@ -41,6 +34,13 @@ h3 {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.col-sm-4 {
+    width: 400px;
+    margin: 15px;
+}
+
+/* Navbar */
 
 .navbar {
     padding-top: 15px;
@@ -58,56 +58,85 @@ h3 {
     padding-left: 30px;
 }
 
+.navbar-brand {
+    font-family: "Monaco";
+}
+
 .color-scheme-dropdown {
     font-size: 30em;
 }
 
-.about-container {
-    padding-top: 160px;
-    padding-left: 200px;
-    padding-right: 200px;
+/* Home */
+
+.home-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 63px;
     transition: var(--transition-time);
     height: 45em;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: row;
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-name {
+    font-size: 72px;
+    font-family: "Monaco";
+}
+
+.home-title {
+    font-size: 36px;
+    font-family: "Monaco";
+}
+
+.home-bg-image {
+    width: 100%;
+    height: 109%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* About */
+
+.about-container {
+    box-shadow: inset 10px 10px 50px black;
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: var(--transition-time);
 }
 
 .about-description {
-    margin-left: 20px;
     text-align: left;
 }
 
+.about-image {
+    float: left;
+    width: 300px;
+    margin-right: 25px;
+    margin-right: 25px;
+}
+
+/* Experience */
+
 .experience-container {
-    transition: var(--transition-time);
-    height: 45em;
-}
-
-.education-container {
-    transition: var(--transition-time);
-    height: 45em;
-}
-
-.projects-container {
-    transition: var(--transition-time);
-    height: 45em;
-}
-
-.feedback-container {
+    box-shadow: inset 10px 10px 50px black;
     transition: var(--transition-time);
 }
 
-.feedback-form {
-    margin: 0 auto;
-    width: 1100px;
-}
-
-.footer-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: var(--transition-time);
+.experience-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
 }
 
 .experience-logo {
@@ -120,4 +149,52 @@ h3 {
 
 .experience-title {
     font-weight: bold;
+}
+
+/* Education */
+
+.education-container {
+    box-shadow: inset 10px 10px 50px black;
+    transition: var(--transition-time);
+}
+
+.education-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.education-image {
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Projects */
+
+.projects-container {
+    box-shadow: inset 10px 10px 50px black;
+    transition: var(--transition-time);
+    height: 30em;
+}
+
+/* Feedback */
+.feedback-container {
+    box-shadow: inset 10px 10px 50px black;
+    transition: var(--transition-time);
+}
+
+.feedback-form {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+/* Footer */
+
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: var(--transition-time);
 }

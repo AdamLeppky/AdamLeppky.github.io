@@ -6,6 +6,12 @@
     --color-navbar-fg: #ffffff;
     --color-navbar-a-fg: #ffffff;
     --color-navbar-a-hover-fg: #c7cbce;
+    --color-home-container-bg: radial-gradient(white, transparent), black;
+    --color-home-name-fg: white;
+    --color-home-name-text-shadow: white 1px 0 10px;
+    --color-home-title-fg: white;
+    --color-home-title-text-shadow: white 1px 0 10px;
+    --color-home-bg-opacity: 50%;
     --color-about-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
     --color-about-fg: #303234;
     --color-experience-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
@@ -29,10 +35,16 @@
 }
 :root.dark {
     --border-containers: 1px solid #00000036;
-    --color-navbar-bg: #1e1e1e;
+    --color-navbar-bg: #101010;
     --color-navbar-fg: #c4c2d0;
     --color-navbar-a-fg: #9a9a9a;
     --color-navbar-a-hover-fg: #ffffff;
+    --color-home-container-bg: radial-gradient(black, transparent), black;
+    --color-home-name-fg: white;
+    --color-home-name-text-shadow: white 1px 0 10px;
+    --color-home-title-fg: white;
+    --color-home-title-text-shadow: white 1px 0 10px;
+    --color-home-bg-opacity: 50%;
     --color-about-bg: linear-gradient(to bottom right, #304f76, #080524);
     --color-about-fg: #ffffff;
     --color-experience-bg: linear-gradient(to bottom right, #306176, #051624);
@@ -55,6 +67,8 @@
     --color-experience-logo-bg: rgb(255, 255, 255);
 }
 
+/* Navbar */
+
 .navbar-brand {
     color: var(--color-navbar-fg);
 }
@@ -75,48 +89,6 @@
 
 .nav-link {
     color: var(--color-navbar-a-fg);
-}
-
-.about-container {
-    background-image: var(--color-about-bg);
-    background-color: var(--color-about-bg);
-    color: var(--color-about-fg);
-    border-bottom: var(--border-containers);
-}
-
-.experience-container {
-    background-image: var(--color-experience-bg);
-    background-color: var(--color-experience-bg);
-    color: var(--color-experience-fg);
-    border-bottom: var(--border-containers);
-}
-
-.education-container {
-    background-image: var(--color-education-bg);
-    background-color: var(--color-education-bg);
-    color: var(--color-education-fg);
-    border-bottom: var(--border-containers);
-}
-
-.projects-container {
-    background-image: var(--color-projects-bg);
-    background-color: var(--color-projects-bg);
-    color: var(--color-projects-fg);
-    border-bottom: var(--border-containers);
-}
-
-.feedback-container {
-    background-image: var(--color-feedback-bg);
-    background-color: var(--color-feedback-bg);
-    color: var(--color-feedback-fg);
-    border-bottom: var(--border-containers);
-}
-
-.footer-container {
-    background-image: var(--color-footer-bg);
-    background-color: var(--color-footer-bg);
-    color: var(--color-footer-fg);
-    border-bottom: var(--border-containers);
 }
 
 .btn {
@@ -144,6 +116,80 @@
     color: var(--color-dropdown-hover-fg);
 }
 
+/* Home */
+
+.home-container {
+    background: var(--color-home-container-bg);
+}
+
+.home-name {
+    color: var(--color-home-name-fg);
+    text-shadow: var(--color-home-name-text-shadow);
+}
+
+.home-title {
+    color: var(--color-home-title-fg);
+    text-shadow: var(--color-home-title-text-shadow);
+}
+
+.home-bg-image {
+    opacity: var(--color-home-bg-opacity);
+}
+
+/* About */
+
+.about-container {
+    background-image: var(--color-about-bg);
+    background-color: var(--color-about-bg);
+    color: var(--color-about-fg);
+    border-bottom: var(--border-containers);
+}
+
+/* Experience */
+
+.experience-container {
+    background-image: var(--color-experience-bg);
+    background-color: var(--color-experience-bg);
+    color: var(--color-experience-fg);
+    border-bottom: var(--border-containers);
+}
+
 .experience-logo {
     background-color: var(--color-experience-logo-bg);
+}
+
+/* Education */
+
+.education-container {
+    background-image: var(--color-education-bg);
+    background-color: var(--color-education-bg);
+    color: var(--color-education-fg);
+    border-bottom: var(--border-containers);
+}
+
+/* Projects */
+
+.projects-container {
+    background-image: var(--color-projects-bg);
+    background-color: var(--color-projects-bg);
+    color: var(--color-projects-fg);
+    border-bottom: var(--border-containers);
+}
+
+/* Feedback */
+
+.feedback-container {
+    background-image: var(--color-feedback-bg);
+    background-color: var(--color-feedback-bg);
+    color: var(--color-feedback-fg);
+    border-bottom: var(--border-containers);
+}
+
+/* Footer */
+
+.footer-container {
+    background-image: var(--color-footer-bg);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-fg);
+    border-bottom: var(--border-containers);
 }
