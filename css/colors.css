@@ -1,29 +1,29 @@
 
 :root,
 :root.light {
-    --border-containers: 1px solid #c4c2d0;
-    --color-navbar-bg: #1e1e1e;
-    --color-navbar-fg: #ffffff;
-    --color-navbar-a-fg: #ffffff;
+    /* --border-containers: 1px solid #c4c2d0; */
+    --color-navbar-bg: #F9F9F9;
+    --color-navbar-fg: #000000;
+    --color-navbar-a-fg: #000000;
     --color-navbar-a-hover-fg: #c7cbce;
-    --color-home-container-bg: radial-gradient(white, transparent), black;
+    --color-home-container-bg: linear-gradient(white, #cacaca);
     --color-home-name-fg: white;
-    --color-home-name-text-shadow: white 1px 0 10px;
+    --color-home-name-text-shadow: rgb(0, 0, 0) 1px 0 10px;
     --color-home-title-fg: white;
-    --color-home-title-text-shadow: white 1px 0 10px;
+    --color-home-title-text-shadow: rgb(0, 0, 0) 1px 0 10px;
     --color-home-bg-opacity: 50%;
-    --color-about-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
+    --color-about-bg: linear-gradient(#cacaca, white);
     --color-about-fg: #303234;
-    --color-experience-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
+    --color-experience-bg: linear-gradient(white, #cacaca);
     --color-experience-fg: #303234;
-    --color-education-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
+    --color-education-bg: linear-gradient(#cacaca, white);
     --color-education-fg: #303234;
-    --color-projects-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
+    --color-projects-bg: linear-gradient(white, #cacaca);
     --color-projects-fg: #303234;
-    --color-feedback-bg: linear-gradient(to bottom right, #dad6c5, #ffffff);
+    --color-feedback-bg: linear-gradient(#cacaca, white);
     --color-feedback-fg: #303234;
-    --color-footer-bg: linear-gradient(to bottom right, #1e1e1e, #1e1e1e);
-    --color-footer-fg: #c4c2d0;
+    --color-footer-bg: white;
+    --color-footer-fg: #000000;
     --color-button-bg: linear-gradient(to bottom right, #ffffff, #ffffff);
     --color-button-fg: #303234;
     --color-button-hover-fg: #bcbcbc;
@@ -39,7 +39,7 @@
     --color-navbar-fg: #c4c2d0;
     --color-navbar-a-fg: #9a9a9a;
     --color-navbar-a-hover-fg: #ffffff;
-    --color-home-container-bg: radial-gradient(black, transparent), black;
+    --color-home-container-bg: linear-gradient(#101010, black);
     --color-home-name-fg: white;
     --color-home-name-text-shadow: white 1px 0 10px;
     --color-home-title-fg: white;
@@ -69,10 +69,6 @@
 
 /* Navbar */
 
-.navbar-brand {
-    color: var(--color-navbar-fg);
-}
-
 .navbar {
     background-image: var(--color-navbar-bg);
     background-color: var(--color-navbar-bg);
@@ -85,6 +81,10 @@
 
 .navbar-nav li a:hover {
     color: var(--color-navbar-a-hover-fg) !important;
+}
+
+.navbar-nav li a {
+    color: var(--color-navbar-a-fg) !important;
 }
 
 .nav-link {
@@ -151,7 +151,6 @@
     background-image: var(--color-experience-bg);
     background-color: var(--color-experience-bg);
     color: var(--color-experience-fg);
-    border-bottom: var(--border-containers);
 }
 
 .experience-logo {
@@ -164,7 +163,6 @@
     background-image: var(--color-education-bg);
     background-color: var(--color-education-bg);
     color: var(--color-education-fg);
-    border-bottom: var(--border-containers);
 }
 
 /* Projects */
@@ -173,7 +171,6 @@
     background-image: var(--color-projects-bg);
     background-color: var(--color-projects-bg);
     color: var(--color-projects-fg);
-    border-bottom: var(--border-containers);
 }
 
 /* Feedback */
@@ -182,7 +179,6 @@
     background-image: var(--color-feedback-bg);
     background-color: var(--color-feedback-bg);
     color: var(--color-feedback-fg);
-    border-bottom: var(--border-containers);
 }
 
 /* Footer */
@@ -191,5 +187,4 @@
     background-image: var(--color-footer-bg);
     background-color: var(--color-footer-bg);
     color: var(--color-footer-fg);
-    border-bottom: var(--border-containers);
 }

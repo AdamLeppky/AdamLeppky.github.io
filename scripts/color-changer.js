@@ -24,17 +24,19 @@ function setColorScheme(scheme) {
 }
 
 function onLoad() {
-    const mode = window.localStorage.getItem('mode');
-    console.log("Loaded Scheme: " + mode);
+    onLightMode();
 
-    switch (mode) {
-        case 'dark': 
-            onDarkMode(); break;
-        case 'light': 
-            onLightMode(); break;
-        default:
-            onDarkMode();
-    }
+    // const mode = window.localStorage.getItem('mode');
+    // console.log("Loaded Scheme: " + mode);
+
+    // switch (mode) {
+    //     case 'dark': 
+    //         onDarkMode(); break;
+    //     case 'light': 
+    //         onLightMode(); break;
+    //     default:
+    //         onDarkMode();
+    // }
 }
 
 function callWhenLoaded(func) {

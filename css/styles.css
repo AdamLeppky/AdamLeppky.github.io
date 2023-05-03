@@ -108,7 +108,6 @@ p {
 /* About */
 
 .about-container {
-    box-shadow: inset 10px 10px 50px black;
     padding-left: 100px;
     padding-right: 100px;
     transition: var(--transition-time);
@@ -128,7 +127,6 @@ p {
 /* Experience */
 
 .experience-container {
-    box-shadow: inset 10px 10px 50px black;
     transition: var(--transition-time);
 }
 
@@ -154,7 +152,6 @@ p {
 /* Education */
 
 .education-container {
-    box-shadow: inset 10px 10px 50px black;
     transition: var(--transition-time);
 }
 
@@ -175,14 +172,12 @@ p {
 /* Projects */
 
 .projects-container {
-    box-shadow: inset 10px 10px 50px black;
     transition: var(--transition-time);
     height: 30em;
 }
 
 /* Feedback */
 .feedback-container {
-    box-shadow: inset 10px 10px 50px black;
     transition: var(--transition-time);
 }
 
