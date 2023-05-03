@@ -20,8 +20,8 @@
     --color-education-fg: #303234;
     --color-projects-bg: linear-gradient(white, #cacaca);
     --color-projects-fg: #303234;
-    --color-feedback-bg: linear-gradient(#cacaca, white);
-    --color-feedback-fg: #303234;
+    --color-contact-bg: linear-gradient(#cacaca, white);
+    --color-contact-fg: #303234;
     --color-footer-bg: white;
     --color-footer-fg: #000000;
     --color-button-bg: linear-gradient(to bottom right, #ffffff, #ffffff);
@@ -53,8 +53,8 @@
     --color-education-fg: #ffffff;
     --color-projects-bg: linear-gradient(to bottom right, #30765f, #05241c);
     --color-projects-fg: #ffffff;
-    --color-feedback-bg: linear-gradient(to bottom right, #30764d, #052410);
-    --color-feedback-fg: #ffffff;
+    --color-contact-bg: linear-gradient(to bottom right, #30764d, #052410);
+    --color-contact-fg: #ffffff;
     --color-footer-bg: #1e1e1e;
     --color-footer-fg: #c4c2d0;
     --color-button-bg: linear-gradient(to bottom right, #181b24, #181b24);
@@ -173,12 +173,12 @@
     color: var(--color-projects-fg);
 }
 
-/* Feedback */
+/* Contact */
 
-.feedback-container {
-    background-image: var(--color-feedback-bg);
-    background-color: var(--color-feedback-bg);
-    color: var(--color-feedback-fg);
+.contact-container {
+    background-image: var(--color-contact-bg);
+    background-color: var(--color-contact-bg);
+    color: var(--color-contact-fg);
 }
 
 /* Footer */

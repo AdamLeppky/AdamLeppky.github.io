@@ -16,7 +16,7 @@ p {
     font-size: 14px;
 }
 
-#home, #about, #experience, #education, #projects, #feedback {
+#home, #about, #experience, #education, #projects, #contact {
     scroll-margin-top: 95px;
 }
 
@@ -176,12 +176,12 @@ p {
     height: 30em;
 }
 
-/* Feedback */
-.feedback-container {
+/* Contact */
+.contact-container {
     transition: var(--transition-time);
 }
 
-.feedback-form {
+.contact-form {
     margin: 0 auto;
     width: 1100px;
 }

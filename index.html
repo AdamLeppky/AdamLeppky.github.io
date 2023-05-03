@@ -17,7 +17,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="scripts/color-changer.js"></script>
-        <script src="scripts/feedback-form.js"></script>
     </head>
 
     <body>
@@ -34,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#feedback">FEEDBACK</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                         <!-- COLOR SCHEME TOGGLE -->
                         <!-- <li>
                             <div class="color-scheme-dropdown btn-group dropstart">
@@ -132,34 +131,14 @@
             </div>
         </div>
 
-        <!-- Feedback -->
-        <div id="feedback" class="container-fluid feedback-container text-center">    
-            <h3 class="margin">Feedback</h3><br>
-            <form class="feedback-form" id="feedbackForm" onsubmit="onFeedbackSubmit()">
+        <!-- Contact -->
+        <div id="contact" class="container-fluid contact-container text-center">    
+            <h3 class="margin">Contact</h3><br>
+            <p class="send-message-description">Send me a message!</p>
+            <form class="contact-form" id="contactForm">
                 <fieldset>
-                    <table>
-                        <tr>
-                            <td><label for="message">Message:</label></td>
-                            <td><textarea id="message" name="message" rows="5" cols="80"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><label for="rating">Rating:</label></td>
-                            <td>
-                                <input type="radio" id="rating-5" name="rating" value="5" checked="checked" /><label for="rating-5">5</label>
-                                <input type="radio" id="rating-4" name="rating" value="4" /><label for="rating-4">4</label>
-                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email:</label></td>
-                            <td><input id="email" type="text" name="email" size="40"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" value="Submit"></td>
-                        </tr>
-                    </table>
+                    <textarea id="message" name="message" rows="5" cols="80"></textarea>
+                    <input type="submit" value="Send">
                 </fieldset>
             </form>
         </div>
