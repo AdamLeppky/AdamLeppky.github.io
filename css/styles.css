@@ -40,6 +40,26 @@ p {
     margin: 15px;
 }
 
+.divider-container-gray {
+    background-color: #cacaca;
+}
+
+.divider-container-white {
+    background-color: #ffffff;
+}
+
+.page-divider-white {
+    margin: 0 auto;
+    width: 90%;
+    border-top: 3px solid #ffffff;
+}
+
+.page-divider-gray {
+    margin: 0 auto;
+    width: 90%;
+    border-top: 3px solid #cacaca;
+}
+
 /* Navbar */
 
 .navbar {

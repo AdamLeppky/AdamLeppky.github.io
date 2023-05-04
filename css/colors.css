@@ -7,10 +7,10 @@
     --color-navbar-a-fg: #000000;
     --color-navbar-a-hover-fg: #c7cbce;
     --color-home-container-bg: linear-gradient(white, #cacaca);
-    --color-home-name-fg: white;
-    --color-home-name-text-shadow: rgb(0, 0, 0) 1px 0 10px;
-    --color-home-title-fg: white;
-    --color-home-title-text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    --color-home-name-fg: rgb(40, 40, 40);
+    --color-home-name-text-shadow: rgb(0, 0, 0) 0.5px 0 10px;
+    --color-home-title-fg: rgb(43, 43, 43);
+    --color-home-title-text-shadow: rgb(0, 0, 0) 0.5px 0 10px;
     --color-home-bg-opacity: 50%;
     --color-about-bg: linear-gradient(#cacaca, white);
     --color-about-fg: #303234;
