@@ -51,13 +51,13 @@ p {
 .page-divider-white {
     margin: 0 auto;
     width: 90%;
-    border-top: 3px solid #ffffff;
+    border-top: 1px solid #000000;
 }
 
 .page-divider-gray {
     margin: 0 auto;
     width: 90%;
-    border-top: 3px solid #cacaca;
+    border-top: 1px solid #000000;
 }
 
 /* Navbar */
