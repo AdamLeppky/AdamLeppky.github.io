@@ -122,21 +122,9 @@ session_start();
         <div id="education" class="container-fluid education-container text-center">
             <h3 class="margin">Education</h3>
             <div class="row justify-content-center education-flex" >
-                <!-- <div class="col-sm-4 item">
-                    <img class="education-image" src="assets/unl1.jpg" />
-                    <h3>University of Nebraska-Lincoln</h3>
-                    <h5>2019-2023</h5>
-                    <h4>Bachelor's in Software Engineering</h4>
-                </div> -->
-                <!-- <div class="col-sm-4"> 
-                    <img class="education-image" src="assets/southwest1.jpg" />
-                    <h3>Lincoln Southwest High School</h3>
-                    <h5>2015-2019</h5>
-                    <h4>High School Diploma</h4>
-                </div> -->
                 <?php
-                loadEducation();
-                ?> 
+                include("scripts/education.php");
+                ?>
             </div>
         </div>
 

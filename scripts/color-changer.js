@@ -15,7 +15,7 @@ function clearColorSchemes() {
 }
 
 function setColorScheme(scheme) {
-    console.log("Setting Scheme: " + scheme);
+    // console.log("Setting Scheme: " + scheme);
     for (const color in COLOR_SCHEMES)
         document.documentElement.classList.remove(COLOR_SCHEMES[color]);
 
