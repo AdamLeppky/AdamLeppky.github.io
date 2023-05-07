@@ -1,22 +1,24 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <title>Adam Leppky</title>
-        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="icon" href="assets/favicon.png">
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/colors.css" rel="stylesheet">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="scripts/color-changer.js"></script>
+        <?php
+        include("scripts/connectToDatabase.php");
+        include("scripts/contentAccessor.php");
+        ?>
     </head>
 
     <body>
@@ -119,19 +121,22 @@
         <!-- Education -->
         <div id="education" class="container-fluid education-container text-center">
             <h3 class="margin">Education</h3>
-            <div class="row justify-content-center education-flex">
-                <div class="col-sm-4 item">
+            <div class="row justify-content-center education-flex" >
+                <!-- <div class="col-sm-4 item">
                     <img class="education-image" src="assets/unl1.jpg" />
                     <h3>University of Nebraska-Lincoln</h3>
                     <h5>2019-2023</h5>
                     <h4>Bachelor's in Software Engineering</h4>
-                </div>
-                <div class="col-sm-4"> 
+                </div> -->
+                <!-- <div class="col-sm-4"> 
                     <img class="education-image" src="assets/southwest1.jpg" />
                     <h3>Lincoln Southwest High School</h3>
                     <h5>2015-2019</h5>
                     <h4>High School Diploma</h4>
-                </div>
+                </div> -->
+                <?php
+                loadEducation();
+                ?> 
             </div>
         </div>
 
