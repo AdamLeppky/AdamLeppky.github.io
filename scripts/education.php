@@ -18,5 +18,4 @@ for ($i=1; $i <= $numRecords; $i++)
     echo "<h4>$award</h4>";
     echo "</div>";
 }
-mysqli_close($db);
 ?>

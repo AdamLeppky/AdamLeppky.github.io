@@ -87,30 +87,9 @@ session_start();
         <div id="experience" class="container-fluid experience-container text-center">    
             <h3 class="margin">Experience</h3><br>
             <div class="row justify-content-center experience-flex">
-                <div class="col-sm-4 item">
-                    <a href="https://www.penlink.com/" target="_blank">
-                        <img class="experience-logo" src="assets/penlink-logo.png" />
-                    </a>
-                    <h4 class="experience-title">Software Engineer</h4>
-                    <h5>Start May 2023</h5>
-                    <p>I have accepted a full-time offer from PenLink as a software engineer.</p>
-                </div>
-                <div class="col-sm-4"> 
-                    <a href="https://www.penlink.com/" target="_blank">
-                        <img class="experience-logo" src="assets/penlink-logo.png" />
-                    </a>
-                    <h4 class="experience-title">Intern</h4>
-                    <h5>2021-2023</h5>
-                    <p>I worked as a Software Development Intern at PenLink for two years, where I gained experience in several projects, including internal tools, simulators, and PenLink's flagship product PLX. I have honed my skills in creating Windows applications from scratch, utilizing C# as the primary programming language. Additionally, I managed build pipelines for full-scale projects, contributing to the successful delivery of various initiatives.</p>
-                </div>
-                <div class="col-sm-4"> 
-                    <a href="https://www.scheels.com/" target="_blank">
-                        <img class="experience-logo" src="assets/scheels-logo.png" />
-                    </a>
-                    <h4 class="experience-title">Cashier | Customer Service | Visa Representative</h4>
-                    <h5>2017-2021</h5>
-                    <p>I started at Lincoln Scheels in High School as a cashier where I learned to interact with many customers on a daily basis. After I outgrew that position with experience I moved up to customer service which came with a whole new set of responsibilities. Soon after that I specialized in working in the Visa credit card booth helping customers apply for the store credit card where I remained for the rest of my time at Scheels.</p>
-                </div>
+                <?php
+                include("scripts/experience.php");
+                ?>
             </div>
         </div>
 
