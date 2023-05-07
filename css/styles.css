@@ -193,7 +193,30 @@ p {
 
 .projects-container {
     transition: var(--transition-time);
-    height: 30em;
+}
+
+.projects-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.project-item {
+    width: 40%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project-image {
+    float: left;
+    width: 50%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.project-description {
+    text-align: left;
 }
 
 /* Contact */

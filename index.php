@@ -114,8 +114,10 @@ session_start();
         <!-- Projects -->
         <div id="projects" class="container-fluid projects-container text-center">    
             <h3 class="margin">Projects</h3><br>
-            <div class="row justify-content-center">
-                <p>Coming Soon...</p>
+            <div class="row justify-content-center projects-flex">
+                <?php
+                include("scripts/projects.php");
+                ?>
             </div>
         </div>
 
