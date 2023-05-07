@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 07, 2023 at 03:00 AM
+-- Generation Time: May 07, 2023 at 09:55 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -40,7 +40,7 @@ CREATE TABLE `education` (
 --
 
 INSERT INTO `education` (`school_id`, `name`, `years`, `award`, `image_file_path`) VALUES
-(0, 'Lincoln Southwest High School', '2015-2019', 'High School Diploma', 'assets/southwest1.png'),
+(0, 'Lincoln Southwest High School', '2015-2019', 'High School Diploma', 'assets/southwest1.jpg'),
 (1, 'University of Nebraska-Lincoln', '2019-2023', 'Bachelor\'s in Software Engineering', 'assets/unl1.jpg');
 
 -- --------------------------------------------------------
@@ -55,6 +55,7 @@ CREATE TABLE `experience` (
   `title` varchar(80) NOT NULL,
   `time` varchar(80) NOT NULL,
   `description` varchar(1000) NOT NULL,
+  `website_url` varchar(255) NOT NULL,
   `image_file_path` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -62,10 +63,10 @@ CREATE TABLE `experience` (
 -- Dumping data for table `experience`
 --
 
-INSERT INTO `experience` (`experience_id`, `company`, `title`, `time`, `description`, `image_file_path`) VALUES
-(0, 'Scheels', 'Cashier | Customer Service | Visa Representative', '2017-2021', 'I started at Lincoln Scheels in High School as a cashier where I learned to interact with many customers on a daily basis. After I outgrew that position with experience I moved up to customer service which came with a whole new set of responsibilities. Soon after that I specialized in working in the Visa credit card booth helping customers apply for the store credit card where I remained for the rest of my time at Scheels.', 'assets/scheels-logo.png'),
-(1, 'PenLink', 'Intern', '2021-2023', 'I worked as a Software Development Intern at PenLink for two years, where I gained experience in several projects, including internal tools, simulators, and PenLink\'s flagship product PLX. I have honed my skills in creating Windows applications from scratch, utilizing C# as the primary programming language. Additionally, I managed build pipelines for full-scale projects, contributing to the successful delivery of various initiatives.', 'assets/penlink-logo.png'),
-(2, 'PenLink', 'Software Engineer', 'Starting May 2023', 'I have accepted a full-time offer from PenLink as a software engineer.', 'assets/penlink-logo.png');
+INSERT INTO `experience` (`experience_id`, `company`, `title`, `time`, `description`, `website_url`, `image_file_path`) VALUES
+(0, 'Scheels', 'Cashier | Customer Service | Visa Representative', '2017-2021', 'I started at Lincoln Scheels in High School as a cashier where I learned to interact with many customers on a daily basis. After I outgrew that position with experience I moved up to customer service which came with a whole new set of responsibilities. Soon after that I specialized in working in the Visa credit card booth helping customers apply for the store credit card where I remained for the rest of my time at Scheels.', 'https://www.scheels.com/', 'assets/scheels-logo.png'),
+(1, 'PenLink', 'Intern', '2021-2023', 'I worked as a Software Development Intern at PenLink for two years, where I gained experience in several projects, including internal tools, simulators, and PenLink\'s flagship product PLX. I have honed my skills in creating Windows applications from scratch, utilizing C# as the primary programming language. Additionally, I managed build pipelines for full-scale projects, contributing to the successful delivery of various initiatives.', 'https://www.penlink.com/', 'assets/penlink-logo.png'),
+(2, 'PenLink', 'Software Engineer', 'Starting May 2023', 'I have accepted a full-time offer from PenLink as a software engineer.', 'https://www.penlink.com/', 'assets/penlink-logo.png');
 
 -- --------------------------------------------------------
 
@@ -75,7 +76,7 @@ INSERT INTO `experience` (`experience_id`, `company`, `title`, `time`, `descript
 
 CREATE TABLE `messages` (
   `message_id` int(11) NOT NULL,
-  `email` varchar(80) NOT NULL,
+  `email` varchar(80) DEFAULT NULL,
   `content` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -84,7 +85,7 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`message_id`, `email`, `content`) VALUES
-(0, 'jswanson@gmail.com', 'Hey there! I like your website!');
+(2, NULL, 'Test');
 
 -- --------------------------------------------------------
 
@@ -134,6 +135,16 @@ ALTER TABLE `messages`
 --
 ALTER TABLE `projects`
   ADD PRIMARY KEY (`project_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
