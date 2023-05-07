@@ -129,11 +129,9 @@ session_start();
         <div id="contact" class="container-fluid contact-container text-center">    
             <h3 class="margin">Contact</h3><br>
             <p class="send-message-description">Send me a message!</p>
-            <form class="contact-form" id="contactForm">
-                <fieldset>
-                    <textarea id="message" name="message" rows="5" cols="80"></textarea>
-                    <input type="submit" value="Send">
-                </fieldset>
+            <form class="message-container" action="scripts/sendMessage.php" method="post">
+                <textarea id="message" name="message" rows="7" cols="80"></textarea>
+                <button class="send-message-button" type="submit">Send</button>
             </form>
         </div>
 

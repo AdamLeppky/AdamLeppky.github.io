@@ -224,9 +224,13 @@ p {
     transition: var(--transition-time);
 }
 
-.contact-form {
-    margin: 0 auto;
-    width: 1100px;
+.message-container {
+    width: 50%; 
+    margin: auto;
+}
+
+.send-message-button {
+    border: 1px solid black;
 }
 
 /* Footer */
