@@ -14,7 +14,7 @@ for ($i=1; $i <= $numRecords; $i++)
     echo "<div class=\"col-sm-4\">";
     echo "<img class=\"education-image\" src=\"$imageFilePath\" />";
     echo "<h3>$name</h3>";
-    echo "<h5>$year</h5>";
+    echo "<h5>$years</h5>";
     echo "<h4>$award</h4>";
     echo "</div>";
 }

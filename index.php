@@ -17,7 +17,6 @@ session_start();
         <script src="scripts/color-changer.js"></script>
         <?php
         include("scripts/connectToDatabase.php");
-        include("scripts/contentAccessor.php");
         ?>
     </head>
 
@@ -129,9 +128,11 @@ session_start();
         <div id="contact" class="container-fluid contact-container text-center">    
             <h3 class="margin">Contact</h3><br>
             <p class="send-message-description">Send me a message!</p>
-            <form class="message-container" action="scripts/sendMessage.php" method="post">
+            <form action="scripts/sendMessage.php" method="post">
                 <textarea id="message" name="message" rows="7" cols="80"></textarea>
-                <button class="send-message-button" type="submit">Send</button>
+                <br>
+                Email: <input type="text" id="email" name="email" style="width: 400px">
+                <button type="submit" name="send">Send</button>
             </form>
         </div>
 
